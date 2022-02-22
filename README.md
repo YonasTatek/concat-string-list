@@ -1,5 +1,5 @@
-# add-array
-Combines a list of arrays, returning their concat as string
+# concat-string-list
+Concat string found in array or list
 
 ## Install
 
