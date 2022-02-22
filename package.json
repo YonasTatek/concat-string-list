@@ -1,22 +1,23 @@
 {
-  "name": "add-array",
+  "name": "concat-string-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "Combines a list of arrays, returning a sum of the numbers found.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YonasTatek/add_array.git"
+    "url": "git+https://github.com/YonasTatek/concat-string-list.git"
   },
   "author": "yonas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/YonasTatek/add_array/issues"
+    "url": "https://github.com/YonasTatek/concat-string-list/issues"
   },
-  "homepage": "https://github.com/YonasTatek/add_array#readme",
+  "homepage": "https://github.com/YonasTatek/concat-string-list#readme",
   "dependencies": {
     "add-array": "^1.0.0"
-  }
+  },
+  "devDependencies": {}
 }

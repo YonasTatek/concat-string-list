@@ -1,28 +1,42 @@
 # add-array
-Combines a list of arrays, returning a sum of the numbers found.
+Combines a list of arrays, returning their concat as string
 
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-$ npm i add-array --save
+$ npm i concat-string-list --save
 ```
 
 
 ## Usage
 
 ```js
-var add-array = require('add-array');
+var add-concat-string-list = require('concat-string-list');
 
-add-array(['8'], ['b', '10'], ['9', 'e', '1']);
-//=> 29
+concat_string_list()(10,"SSh",90,[10,10],[[4.4,["FF"]]]);
+//=> 10SSh9010104.4FF
 ```
 
-Returns only sum of number it ignore other data type like string :
+If you pass parameter add then it will be added in between those value(optional) :
 
 ```js
-add-array(['10', 'a'], ['b', '2']);
-//=> 12
+console.log(concat_string_list({add:"hi"})(10,"SSh",90,[10,10],[[4.4,["FF"]]]))
+//=> 10hiSShhi90hi10hi10hi4.4hiFF
 ```
 
+If you pass parameter only_string with value true then it will concat only string :
+
+```js
+concat_string_list({add:"hi",only_string:true})(10,"SSh",90,[10,10],[[4.4,["FF"]]])
+//=> SShhiFF
+```
+
+
+If you pass parameter only_number with value true then it will add number found :
+
+```js
+concat_string_list({add:"hi",only_number:true})(10,"SSh",90,[10,10],[[4.4,["FF"]]])
+//=> 124.4
+```
